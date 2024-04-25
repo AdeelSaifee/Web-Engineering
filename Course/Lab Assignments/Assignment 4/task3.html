@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    /*
+    1. Start the program
+    2. Declare and read a variable n using window.prompt in body section within the script
+    3. Check from initial value zero to n using for loop for tracing even or odd number.
+    4. Check the even or odd using if condition within for loop
+    5. Print the even or odd number using document.write
+    */
+
+    let n = window.prompt("Enter a number");
+
+    for (let i = 0; i <= n; i++) {
+        if (i % 2 === 0) {
+            document.write("<h3>" + i + " is even<br>" + "</h3>");
+        } else {
+            document.write("<h3>" + i + " is odd<br>" + "</h3>");
+        }
+    }
+</script>
+
+</body>
+</html>

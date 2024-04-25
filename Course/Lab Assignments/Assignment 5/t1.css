@@ -1,0 +1,138 @@
+body{
+    background-color: white;
+}
+
+.cal-container{
+    background: #222;
+    width: 300px;
+    height: 520px;
+    text-align: center;
+    border-radius: 10px;
+    border: 5px solid black;
+    margin-left: 50px;
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+}
+
+.clock{
+    position: relative;
+    top: 15px;
+    height: 40px;
+    width: 110px;
+    border-radius: 4px;
+    left: 170px;
+    background: black;
+    text-align: center;
+}
+
+#time{
+    color: black;
+    position: relative;
+    background: red;
+    width: 100px;
+    height: 25px;
+    top: 3px;
+    left: 3px;
+    padding-top: 6px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 3px;
+}
+
+.display{
+    background-color: black;
+    height: 45px;
+    position: relative;
+    display: inline-block;
+    top: 30px;
+    width: 265px;
+    border-radius: 5px;
+}
+
+#screen{
+    position: relative;
+    height: 33px;
+    top: 2.5px;
+    width: 253px;
+    background: #bccd95;
+    text-align: right;
+    font-size: 1.5em;
+    border-radius: 5px;
+}
+
+.keys{
+    position: relative;
+    top: 40px;
+}
+
+.btn{
+    color: black;
+    background: lightsteelblue;
+    cursor: pointer;
+    width: 40px;
+    margin: 2px 2px 2px 4px;
+    font-size: 0.9em;
+    text-align: center;
+    border: none;
+    border-top: 2px solid transparent;
+    padding: 3px;
+}
+
+.btn-sign{
+    background: #413c3c;
+    color: white;
+    border-radius: 12px;
+    border-top: 2px solid #413c3c;
+    border-bottom: 2px solid black;
+}
+
+.btn-sign:active{
+    border-bottom: 2px solid #413c3c;
+    border-top: 2px solid #000;
+}
+
+.btn-num{
+    background-color: black;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 6px;
+    border-bottom: 2px solid #3b3737;
+    border-top: 2px solid black;
+}
+
+.btn-num:active{
+    border-top: 2px solid #3b3737;
+    border-bottom: 2px solid black;
+}
+
+.btn-red{
+    background: red;
+    padding: 4px;
+    color: #000;
+    font-size: 1.1em;
+    border-radius: 4px;
+    border-bottom: 2px solid #000000;
+    border-top: 2px solid red;
+    font-weight: 600;
+}
+
+.btn-red:active{
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid red;
+}
+
+.btn-opera{
+    background: #111;
+    color: white;
+    padding: 4px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #111;
+}
+
+.btn-opera:active{
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #111;
+}
+

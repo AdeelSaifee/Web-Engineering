@@ -1,0 +1,202 @@
+.display-4{
+    font-size: 3rem;
+}
+
+.container-2{
+    background-color: #dfeeff;
+    padding: 20px;
+}
+input[type="radio"]{
+    margin-left: 50px;
+}
+
+.ml-2 {
+    margin-left: 4rem !important;
+}
+
+.last{
+    margin-left: 5rem !important;
+}
+form{
+    margin-top: 20px;
+}
+
+@media (max-width: 576px) {
+    .display-4 {
+        font-size: 1.5rem;
+    }
+}
+.company{
+    margin-left: 1rem;
+}
+
+
+@media only screen and (min-width: 600px){
+    .lastName {
+        position: relative;
+        top: -50px;
+    }
+    .ml-custom{
+        margin-left: 28.3rem;
+    }
+    .companyText{
+        position: relative;
+        top: -50px;
+    }
+    .phoneText{
+        position: relative;
+        top: -50px;
+        left: 30px;
+    }
+    .ad{
+        margin-left: 0.3rem
+    }
+    .extText{
+        position: relative;
+        bottom: 10px;
+    }
+    .emailAddress{
+        position: relative;
+        top: -50px;
+        left: 34px;
+    }
+    .zipCodeInput{
+        position: relative;
+        bottom: 30px;
+        right: 90px;
+    }
+    .zipCodeText{
+        position: relative;
+        bottom: 33px;
+        left: 10px;
+    }
+    .retype{
+        position: relative;
+        right: 62px;
+    }
+    .country{
+        position: relative;
+        right: 60px;
+        bottom: 25px;
+    }
+    .addressType{
+        position: relative;
+        left: 450px;
+        top: -110px;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    .lastName {
+        position: relative;
+        top: 0;
+    }
+    .ml-custom{
+        margin-left: 0;
+    }
+    .companyText{
+        position: relative;
+        top: 0;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .city, .state, .address {
+        position: relative;
+        left: 20px;
+    }
+    input[type=submit]{
+        position: relative;
+        bottom: 30px;
+        left: 300px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .phone-container {
+        position: relative;
+        top: 30px;
+        right: 30px;
+    }
+
+    .lastNameText {
+        position: relative;
+        left: 8px;
+    }
+
+
+    .emailAddress {
+        position: relative;
+        left: 0;
+        top: -30px;
+    }
+
+    .emailText {
+        position: relative;
+        left: 10px;
+    }
+
+    .phoneNumberText {
+        position: relative;
+        left: 10px;
+    }
+
+    .zipCodeText, .zipCodeInput {
+        position: relative;
+        top: 0;
+    }
+
+    .zipCodeInput {
+        position: relative;
+        left: 0;
+    }
+
+    .retype {
+        position: relative;
+        left: 0;
+    }
+
+    .reTypeText {
+        position: relative;
+        left: 10px;
+    }
+
+    .country {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .addressType {
+        position: relative;
+        left: 20px;
+        top: 3px;
+    }
+
+    .extContainer {
+        position: relative;
+        top: 15px;
+    }
+
+    .state {
+        position: relative;
+        top: 2px;
+    }
+
+    .orderNow {
+        position: relative;
+        top: 10px;
+    }
+    .orderContainer{
+        position: relative;
+        left: 320px;
+        bottom: 24px;
+    }
+    .ss{
+        position: relative;
+        right: 60px;
+    }
+    input[type="submit"]{
+        margin-bottom: 20px;
+    }
+
+}

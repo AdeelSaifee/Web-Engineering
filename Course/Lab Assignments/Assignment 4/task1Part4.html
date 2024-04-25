@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //4.	Create the HTML file. Check the number divisible by 3 and number divisible by 5. Add
+    // all the values which are divisible by 3 and 5.
+    let num = [15, 20, 30, 45, 50];
+    let sum = 0;
+    for(let i=0;i<num.length;i++)
+        if(num[i]%3===0 && num[i]%5===0)
+            sum+=num[i];
+    alert(`The sum of numbers divisible by 3 and 5: ${sum}`);
+</script>
+
+</body>
+</html>

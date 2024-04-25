@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+    minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Scientific Calculator Tutorial</title>
+    <link rel="stylesheet" href="t1.css">
+</head>
+<body onload="startTime()">
+<div class="cal-container">
+
+    <!-- clock-->
+    <div class="clock">
+        <p id="time">time goes here</p>
+    </div>
+
+    <!-- screen-->
+    <div class="display">
+        <input type="text" id="screen" placeholder="0" readonly>
+    </div>
+
+    <!-- calculator buttons -->
+    <div class="keys">
+        <p>
+            <input type="button" value="sin" class="btn btn-sign" onclick="sine()">
+            <input type="button" value="cos" class="btn btn-sign" onclick="cosine()">
+            <input type="button" value="tan" class="btn btn-sign" onclick="tan()">
+            <input type="button" value="asin" class="btn btn-sign" onclick="invsine()">
+            <input type="button" value="acos" class="btn btn-sign" onclick="invcosine()">
+        </p>
+        <p>
+            <input type="button" value="atan" class="btn btn-sign" onclick="invtan()">
+            <input type="button" value="π" class="btn btn-sign" onclick="press('22/7')">
+            <input type="button" value="ln" class="btn btn-sign" onclick="ln()">
+            <input type="button" value="log" class="btn btn-sign" onclick="log()">
+            <input type="button" value="%" class="btn btn-sign" onclick="percent()">
+        </p>
+        <p>
+            <input type="button" value="sqd" class="btn btn-sign" onclick="sqrt()">
+            <input type="button" value="cube" class="btn btn-sign" onclick="cube()">
+            <input type="button" value="√" class="btn btn-sign" onclick="sqrt()">
+            <input type="button" value="(" class="btn btn-sign" onclick="press('(')">
+            <input type="button" value=")" class="btn btn-sign" onclick="press(')')">
+        </p>
+
+        <p style="margin-top: 30px;">
+            <input type="button" value="7" class="btn btn-num" onclick="press(7)">
+            <input type="button" value="8" class="btn btn-num" onclick="press(8)">
+            <input type="button" value="9" class="btn btn-num" onclick="press(9)">
+            <input type="button" value="Del" class="btn btn-red" onclick="backSpace()">
+            <input type="button" value="C" class="btn btn-red" onclick="clearScreen('')">
+        </p>
+
+        <p>
+            <input type="button" value="4" class="btn btn-num" onclick="press(4)">
+            <input type="button" value="5" class="btn btn-num" onclick="press(5)">
+            <input type="button" value="6" class="btn btn-num" onclick="press(6)">
+            <input type="button" value="x" class="btn btn-opera" onclick="press('*')">
+            <input type="button" value="/" class="btn btn-opera" onclick="press('/')">
+        </p>
+
+        <p>
+            <input type="button" value="1" class="btn btn-num" onclick="press(1)">
+            <input type="button" value="2" class="btn btn-num" onclick="press(2)">
+            <input type="button" value="3" class="btn btn-num" onclick="press(3)">
+            <input type="button" value="+" class="btn btn-opera" onclick="press('+')">
+            <input type="button" value="-" class="btn btn-opera" onclick="press('-')">
+        </p>
+
+        <p>
+            <input type="button" value="0" class="btn btn-num" onclick="press(0)">
+            <input type="button" value="±" class="btn btn-opera" onclick="plusminus()">
+            <input type="button" value="." class="btn btn-num" onclick="press('.')">
+            <input type="button" value="Exp" class="btn btn-opera" onclick="Exp()">
+            <input type="button" value="=" class="btn btn-opera" onclick="calculate()">
+        </p>
+    </div>
+</div>
+
+
+<script src="t1.js"></script>
+</body>
+</html>

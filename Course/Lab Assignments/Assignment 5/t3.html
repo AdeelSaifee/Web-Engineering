@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Functions</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            background-color: #1b1b32;
+            color: #f5f6f7;
+            font-family: Tahoma;
+            font-size: 16px;
+
+        }
+        button {
+            cursor: pointer;
+            color: #0a0a23;
+            background-color: #feac32;
+            background-image: linear-gradient(#fecc4c, #ffac33);
+            border: 3px solid #feac32;
+            margin: 1.1rem 0;
+            display: block;
+            width: 100%;
+            height: 2.2rem;
+            font-size: 1.1rem;
+            min-width: 300px;
+        }
+        h1 {
+            margin: 1em auto;
+            text-align: center;
+        }
+        #result{
+            text-align: center;
+            margin: 5px;
+            font-size: 26px;
+        }
+
+
+    </style>
+</head>
+<body>
+<h1>JavaScript Functions</h1>
+<button onclick="reverseNumber()">Reverse Number</button>
+<button onclick="sortString()">Sort String</button>
+<button onclick="checkNegative()">Check Negative Number</button>
+<button onclick="displayOddNumbers()">Display Odd Numbers</button>
+<p id="result"></p>
+
+<script>
+    function reverseNumber() {
+        let num = prompt("Enter a number to reverse");
+        let reversed = num.split('').reverse().join('');
+        document.getElementById("result").innerHTML = "Reversed Number: " + reversed;
+    }
+
+    function sortString() {
+        let str = prompt("Enter a string to sort");
+        let sorted = str.split('').sort().join('');
+        document.getElementById("result").innerHTML = "Sorted String: " + sorted;
+    }
+
+    function checkNegative() {
+        let num = prompt("Enter a number");
+        if (num < 0) {
+            alert("Error: Number is negative");
+        } else {
+            alert("Number is positive");
+        }
+    }
+
+    function displayOddNumbers() {
+        let num = prompt("Enter a number");
+        if (num < 0) {
+            alert("Error: Number is negative");
+        } else {
+            let oddNumbers = [];
+            for (let i = 1; i <= num; i++) {
+                if (i % 2 !== 0) {
+                    oddNumbers.push(i);
+                }
+            }
+            document.getElementById("result").innerHTML = "Odd Numbers: " + oddNumbers.join(', ');
+        }
+    }
+</script>
+</body>
+</html>

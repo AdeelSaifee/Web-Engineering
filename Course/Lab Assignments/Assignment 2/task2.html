@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task2</title>
+    <style>
+        table{
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+        tr{
+            border: 1px solid;
+        }
+        tfoot{
+            background-color: lightgreen;
+            text-align: center;
+        }
+        textarea{
+            height: 80px;
+            width: 85%;
+        }
+        input[type="text"]{
+            width: 90%;
+        }
+        input[name="zipcode"]{
+            width: 70px;
+        }
+        input[name="country"]{
+            width: 100px;
+        }
+        input[name="day"], input[name="month"], input[name="year"], input[name="countryCode"],
+        input[name="areaCode"], input[name="state"]{
+            width:50px;
+        }
+        input[name="number"]{
+            width:70px;
+        }
+        input[name="city"]{
+            width: 185px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form method="post" action="#">
+        <div>
+            <table border="1" align="center" cellpadding="10px">
+                <tr>
+                    <th><label for="lastname">Last Name</label></th>
+                    <td><input type="text" id="lastname" name="firstname" required></td>
+                </tr>
+                <tr>
+                    <th><label for="firstname">First Name</label></th>
+                    <td><input type="text" name="firstname" id="firstname"></td>
+                </tr>
+                <tr>
+                    <th><label for="address">Address</label></th>
+                    <td><textarea id="address" name="address"></textarea></td>
+                </tr>
+                <tr>
+                    <th><label for="city">City</label></th>
+                    <td><input type="text" required id="city" name="city">
+                        <label for="state" class="state"><b>State</b></label>
+                        <input type="text" id="state" name="state">
+                </tr>
+                <tr>
+                    <th><label for="zipcode">Zip/Postal Code</label></th>
+                    <td><input type="text" name="zipcode" id="zipcode"></td>
+                </tr>
+                <tr>
+                    <th><label for="country">Country</label></th>
+                    <td>
+                        <select id="country">
+                            <option value="">Select Country</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Netherlands">Netherlands</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Romanian">Romanian</option>
+                            <option value="Serbia">Serbia</option>
+                            <option value="Turkey">Turkey</option>
+                            <option value="United States">United States</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="phone">Phone</label></th>
+                    <td> (+
+                        <input type="text" name="countryCode" id="phone">
+                        )
+                        <input type="text" name="areaCode"> -
+                        <input type="text" name="number">
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="email">Email</label></th>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <th><label>Birth date</label></th>
+                    <td>
+                        <label for="month">Month</label>
+                        <input type="text" name="month" id="month" maxlength="2">
+                        <label for="day">Day</label>
+                        <input type="text" name="day" id="day" max="2">
+                        <label for="year">Year</label>
+                        <input type="text" name="year" id="year">
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="gender">Gender</label></th>
+                    <td>
+                        <select name="gender" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Starting Date</th>
+                    <td>
+                        <input type="radio" name="startingDate" id="summer">
+                        <label for="summer">Summer 2009</label>
+                        <input type="radio" name="startingDate" id="spring">
+                        <label for="spring">Spring 2009</label>
+                    </td>
+                </tr>
+                <tfoot>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Clear this form">
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+    </form>
+</div>
+</body>
+</html>

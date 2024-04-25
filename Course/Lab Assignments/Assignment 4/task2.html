@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!---Using html forms item create an "entry form "that contains all the details of a person. Name, Father's Name,
+    date.of.birth, age, nationality, sex, academic background, working experience, professional skills, awards and
+    achievements, References. Make sure that you do save all this information in to an array. display the content
+    using document.write().-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entry Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        fieldset {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        legend {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<fieldset>
+    <legend><h2>Entry Form</h2></legend>
+    <form id="entryForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="fatherName">Father's Name:</label><br>
+        <input type="text" id="fatherName" name="fatherName" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="nationality">Nationality:</label><br>
+        <input type="text" id="nationality" name="nationality" required><br><br>
+
+        <label for="sex">Sex:</label><br>
+        <select id="sex" name="sex" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="academicBackground">Academic Background:</label><br>
+        <textarea id="academicBackground" name="academicBackground" rows="4" required></textarea><br><br>
+
+        <label for="workExperience">Working Experience:</label><br>
+        <textarea id="workExperience" name="workExperience" rows="4" required></textarea><br><br>
+
+        <label for="professionalSkills">Professional Skills:</label><br>
+        <textarea id="professionalSkills" name="professionalSkills" rows="4" required></textarea><br><br>
+
+        <label for="awards">Awards and Achievements:</label><br>
+        <textarea id="awards" name="awards" rows="4" required></textarea><br><br>
+
+        <label for="references">References:</label><br>
+        <textarea id="references" name="references" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</fieldset>
+
+<script>
+    document.getElementById('entryForm').addEventListener('submit',function (){
+        const formData = {
+            name: document.getElementById('name').value,
+            father: document.getElementById("fatherName").value,
+            dob: document.getElementById("dob").value,
+            age: document.getElementById('age').value,
+            nationality: document.getElementById('nationality').value,
+            sex: document.getElementById('sex').value,
+            academicBackground: document.getElementById('academicBackground').value,
+            workExperience: document.getElementById('workExperience').value,
+            professionalSkills: document.getElementById('professionalSkills').value,
+            awards: document.getElementById('awards').value,
+            references: document.getElementById('references').value
+        }
+
+        document.write("<fieldset><legend><h2>Entered Details</h2></legend>");
+        document.write("<p><strong>Name:</strong> " + formData.name);
+        document.write("<p><strong>Father's Name:</strong> " + formData.father + "</p>");
+        document.write("<p><strong>Date of Birth:</strong> " + formData.dob + "</p>");
+        document.write("<p><strong>Age:</strong> " + formData.age + "</p>");
+        document.write("<p><strong>Nationality:</strong> " + formData.nationality + "</p>");
+        document.write("<p><strong>Sex:</strong> " + formData.sex + "</p>");
+        document.write("<p><strong>Academic Background:</strong> " + formData.academicBackground + "</p>");
+        document.write("<p><strong>Working Experience:</strong> " + formData.workExperience + "</p>");
+        document.write("<p><strong>Professional Skills:</strong> " + formData.professionalSkills + "</p>");
+        document.write("<p><strong>Awards and Achievements:</strong> " + formData.awards + "</p>");
+        document.write("<p><strong>References:</strong> " + formData.references + "</p>");
+    })
+</script>
+
+</body>
+</html>
+
