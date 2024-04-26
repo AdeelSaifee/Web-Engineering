@@ -1,0 +1,41 @@
+h1{
+    text-align: center;
+}
+.marker{
+    background-color: red;
+    height: 25px;
+    width: 200px;
+    margin: 10px auto;
+}
+.red{
+    background:linear-gradient(180deg,rgb(122,74,14) 0%, rgb(245,62,133) 50%,rgb(162,27,27) 100%);
+    box-shadow: 0 0 20px 0 rgba(83,14,14,0.8);
+
+}
+.green{
+    background: linear-gradient(#55680D,#71F53E,#116C31);
+    box-shadow: 0 0 20px 0 #3b7E20CC;
+}
+.blue{
+    background: linear-gradient(hsl(186,76%,16%),hsl(223,90%,60%),hsl(240,56%,42%));
+    box-shadow: 0 0 20px 0 hsla(223,59%,31%,0.8);
+}
+.container{
+    background-color: rgb(255,255,255);
+    padding: 10px 0;
+}
+
+.sleeve{
+    width: 110px;
+    height: 25px;
+    background-color: rgba(255,255,255,0.5);
+    border-left: 10px double rgba(0,0,0,0.75);
+}
+.cap{
+    width: 60px;
+    height: 25px;
+}
+
+.cap, .sleeve{
+    display: inline-block;
+}
